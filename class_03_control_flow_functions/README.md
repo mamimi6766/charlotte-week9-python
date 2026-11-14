@@ -1,0 +1,5 @@
+# Week 9 Class 3 — Control Flow and Functions
+
+The script checks each pressure reading with a function and classifies it as invalid, low, normal, or high. It reports every observation, including readings from inactive sensors, so none are hidden. For the averages, it uses only active observations with valid pressures. A `continue` statement skips inactive or invalid readings so they do not affect the totals. Running totals and counts are stored by well ID in dictionaries. This keeps repeated readings, such as the two readings for WELL-07, and lets the script calculate a separate average for each well.
+
+The script returns converted values from its functions so other code can use them. Printing is used to display the results to the user. Missing or negative pressure values are treated as invalid and are not included in averages.
