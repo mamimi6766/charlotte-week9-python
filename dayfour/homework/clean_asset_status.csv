@@ -1,0 +1,4 @@
+asset_id,status,uptime_hours
+ASSET-01,ACTIVE,120.0
+ASSET-02,MAINTENANCE,42.5
+ASSET-03,OFFLINE,0.0
