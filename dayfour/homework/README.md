@@ -1,4 +1,16 @@
-# Class 4 Homework — Asset Status
+## Part A — Concept explanations
+
+1.Explain parsing versus validation using a telemetry example.
+Parsing separates a telemetry row into its fields, such as asset ID, status, and uptime. Validation checks whether those fields are acceptable—for example, that uptime is numeric and not negative.
+
+2.Explain why `with open(...)` is preferable to opening a file without closing it.
+`with open(...)` closes a file automatically when the indented block ends, even if an error occurs. This helps prevent files from being left open.
+
+ 3.Why should a parser catch ValueError for invalid readings but not use bare except?
+A parser should catch `ValueError` when a reading cannot be converted or is invalid. A bare `except` can hide unrelated programming errors, making problems harder to find.
+
+4.Explain the difference between assertEqual, assertAlmostEqual, and assertRaises.
+`assertEqual` checks that two values are exactly equal. `assertAlmostEqual` compares numbers allowing for small rounding differences. `assertRaises` checks that code raises the expected error.# Class 4 Homework — Asset Status
 
 ## Input format
 Each line in `asset_status_input.csv` contains three comma-separated fields:
